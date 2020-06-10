@@ -1,11 +1,9 @@
+// 导航效果
 jQuery(window).on('load', function() {
 	"use strict";
 
-
-	// HIDE PRELOADER
 	$(".preloader").addClass("hide-preloader");
 
-	// SHOW/ANIMATE ANIMATION CONTAINER
 	setTimeout(function() {
 
 		$("#intro .animation-container").each(function() {
@@ -30,7 +28,6 @@ jQuery(document).ready(function($) {
 	"use strict";
 
 
-	// ONE PAGE NAVIGATION
 	$(".navigation-main .navigation-items").onePageNav({
 		currentClass: "current",
 		changeHash: false,
@@ -41,7 +38,6 @@ jQuery(document).ready(function($) {
 	});
 
 
-	// SMOOTH SCROLL FOR SAME PAGE LINKS
 	$(document).on('click', 'a.smooth-scroll', function(event) {
 
 		event.preventDefault();
@@ -62,7 +58,6 @@ jQuery(document).ready(function($) {
 	});
 
 
-	// SCROLL REVEAL SETUP
 	window.sr = ScrollReveal();
 	sr.reveal(".scroll-animated-from-bottom", {
 		duration: 600,
@@ -80,7 +75,6 @@ jQuery(document).ready(function($) {
 	});
 
 
-	// WORK CAROUSEL
 	$('.work-carousel').owlCarousel({
 		center: true,
 		items: 1,
